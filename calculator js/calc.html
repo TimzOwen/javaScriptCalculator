@@ -1,0 +1,49 @@
+<!--simple calculator by Owen in java script-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript">
+    function displayNumber(n1) {
+      CalculatorForm.text1.value = CalculatorForm.text1.value + n1;
+
+      var colors = new Array();
+      colors[0] = "red";
+      colors[1] = "green";
+      colors[2] = "blue";
+      colors[3] = "orange";
+      colors[4] = "magenta";
+      colors[5] = "cyan";
+      for (var i in colors) {
+        document.write("<div style=\"background-color:" +
+          colors[i] + ";\">" +
+          colors[i] + "</div>\n");
+      }
+
+    }
+  </script>
+</head>
+
+<body>
+  <form name=CalculatorForm>
+    <input type="text" name="text1"><br>
+    <input type=button name="btn09" value=9 onclick="displayNumber(btn09.value)">
+    <input type=button name="btn08" value=8 onclick="displayNumber(btn08.value)">
+    <input type=button name="btn07" value=7 onclick="displayNumber(btn07.value)">
+    <input type=button name="btnAdd" value=+ onclick="displayNumber(btnAdd.value)"><br>
+    <input type=button name="btn06" value=6 onclick="displayNumber(btn06.value)">
+    <input type=button name="btn05" value=5 onclick="displayNumber(btn05.value)">
+    <input type=button name="btn04" value=4 onclick="displayNumber(btn04.value)">
+    <input type=button name="btnMinus" value=- onclick="displayNumber(btnMinus.value)"><br>
+    <input type=button name="btn03" value=3 onclick="displayNumber(btn03.value)">
+    <input type=button name="btn02" value=2 onclick="displayNumber(btn02.value)">
+    <input type=button name="btn01" value=1 onclick="displayNumber(btn01.value)">
+    <input type=button name="btnMult" value=* onclick="displayNumber(btnMult.value)"><br>
+    <input type=button name="btn00" value=0 onclick="displayNumber(btn00.value)">
+    <input type=button name="divbtn" value=/ onclick="displayNumber(divbtn.value)">
+    <input type=button name="potbtn" value=. onclick="displayNumber(potbtn.value)">
+    <input type=button name="equlbtn" value==onclick="displayNumber(equlbtn.value)">
+  </form>
+</body>
+
+</html>
